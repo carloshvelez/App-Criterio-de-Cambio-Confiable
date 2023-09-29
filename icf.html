@@ -7,11 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  
 </script>
 
     <script src="scripts/script.js"></script>
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
-    <title>Calculadora criterio de cambio fiable</title>
+    <title>Obtener el ICF</title>
 </head>
 <body>
     <nav class="navbar navbar-expand navbar-dark bg-primary">
@@ -20,17 +21,16 @@
             Calculadora ICF
         </p>
         <ul class="navbar-nav">
-            <li class="nav-item"><a  class="nav-link active">¿Es fiable el cambio que observo?</a></li>
-            <li class="nav-item"><a  class="nav-link" href="icf.html">Calcular ICF</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link">¿Es fiable el cambio que observo?</a></li>
+            <li class="nav-item"><a class="nav-link active">Calcular ICF</a></li>
             <li class="nav-item"><a class="nav-link" href="procedimiento.html">Cálculo paso a paso</a></li>
         </ul>
     </nav>
     <main>
-    <h1 id="titulo-calculo">¿Es fiable el cambio que observo?</h1>
-    <p>Para identificar si es fiable la diferencia entre las medidas pre y post, es necesario calcular el error estandar de la diferencia (EED) y verificar si las medidas difieren en más de 1.96 veces el EED.
-    </p>
-    <p>Diligencia el siguiente formulario para hacer ese cálculo.</p>
-    <form id="formulario-dif">
+    <h1 id="titulo-calculo">Calcular el Indice de Cambio Fiable</h1>
+    <p>En <a href="/index.html">esta calculadora</a> obtuviste el error estándar de la diferencia EED. El Índice de Cambio Fiable es una medida de cuántos EED hay en la diferencias que observas entre el pretest y el postest.</p>
+    <p>Diligencia el siguiente formulario para verificar si la diferencia es significativa y obtener el IFC.</p>
+    <form id="formulario-icf">
         <div class="mb-3">
             <label for="desviacionEstandar">Ingresa la desviación estándar de la muestra normativa:</label>
             <input id="desviacionEstandar" type="number" name="desviación_estandar" step="0.001">
@@ -40,7 +40,17 @@
             <label for="confiabilidad">Ingresa la confiabilidad del instrumento psicométrico que usaste:</label>
             <input id="confiabilidad" type="number" name="desviación_estandar" step="0.001">
             <div id="ayudaDesviacion" class="form-text">Ingresa el coeficiente de confiabilidad del instrumento. Es un número mayor que 0 y menor que 1. Si ingresas números mayores o iguales a 1, el cálculo no se realizará</div>
-        </div>        
+        </div>       
+        <div class="mb-3">
+            <label for="pre">Ingresa la medida previa:</label>
+            <input id="pre" type="number" name="pretest" step="0.001">
+            <div id="ayudaPre" class="form-text">Ingresa el puntaje de tu usuario durante el pretest</div>
+        </div>  
+        <div class="mb-3">
+            <label for="post">Ingresa la medida posterior:</label>
+            <input id="post" type="number" name="postest" step="0.001">
+            <div id="ayudaPre" class="form-text">Ingresa el puntaje de tu usuario durante el postest</div>
+        </div> 
        
         <button type="submit" id="calcular" class="btn btn-primary"> Calcular </button>
     </form>
@@ -51,27 +61,27 @@
         <p>No se ha realizado ningún cálculo. Esperando datos...</p>
     </div>
     
-
-
-
-    <h1 class="titulo1">Cálculo paso a paso</h1>
+    <h2 class="titulo1">Cálculo paso a paso</h2>
     <p>Si quieres conocer sobre la aritmética básica detrás de este cálculo, puedes ingresar a <a href="procedimiento.html">este enlace</a>.</p>
+
     <h2 class="titulo1">Cómo citar</h2>
     <p>Pendiente...</a>.</p>
 
-    <h2 class="titulo1">Referencias bibliográficas</h2>
+    <h2 class="titulo1">Referencias bibliográricas</h2>
     <p>Pendiente...</a>.</p>
+
+    
 </main>
-    <footer><div class="desarrolladoPor">
-        <p>Desarrollado por: </p>
-        <p>Carlos Vélez Ocampo (2023)</p>
-        <p></p>
-    </div>
-        <ul class="nav list-unstyled d-flex iconos-redes">
-            <li class="ms-3"><a class="text-muted" href="https://github.com/carloshvelez" target="_blank"><i class="bi bi-github"></i></a></li>
-            <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/carlos-v%C3%A9lez-ocampo-9541617a" target="_blank"><i class="bi bi-linkedin"></i></a></li>           
-        </ul>
-        
-      </footer>
+<footer><div class="desarrolladoPor">
+    <p>Desarrollado por: </p>
+    <p>Carlos Vélez Ocampo (2023)</p>
+    <p></p>
+</div>
+    <ul class="nav list-unstyled d-flex iconos-redes">
+        <li class="ms-3"><a class="text-muted" href="https://github.com/carloshvelez" target="_blank"><i class="bi bi-github"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/carlos-v%C3%A9lez-ocampo-9541617a" target="_blank"><i class="bi bi-linkedin"></i></a></li>           
+    </ul>
+    
+  </footer>
 </body>
 </html>

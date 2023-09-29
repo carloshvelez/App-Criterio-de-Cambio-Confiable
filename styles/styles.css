@@ -1,10 +1,12 @@
-body{
+main{
     display: flex;
     flex-direction: column;
-    padding: 0 15%
+    padding: 0 20%
 }
 
-#formulario-icf{
+
+
+form{
     width: 70%;
     background-color: beige;
     padding: 15px;
@@ -16,13 +18,89 @@ body{
     margin-top: 45px;
 }
 
+.advertenciaCalculo{
+    margin-top: 12px;
+}
+
 label{
-    max-width: 40%;   
+    width: 50%;   
     
     
 }
 
 .titulo1{
     margin-top: 50px;
+}
+
+.pSinEspacio{
+    margin-bottom: 2px;
+}
+
+.nota{
+    font-size: 0.8;
+    
+    background-color: rgba(30, 189, 210, 0.11);
+}
+
+.titulo-barra{
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.171);
+    border-radius: 80px;
+    margin: 5px;
+    padding: 5px
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: rgba(145, 143, 143, 0.63) solid 1px;
+    margin: 25px 15px 20px 15px;
+    padding-top: 10px;
+}
+
+.iconos-redes{
+    margin-right: 25px;
+    
+}
+
+.desarrolladoPor{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.desarrolladoPor p{
+    margin-bottom: 0px;
+}
+
+footer  i{
+    font-size: 1.5rem;
+    
+}
+
+@media screen and (max-width: 862px){
+    main{
+        padding: 0 10%
+    }
+    form{
+        align-self: center;
+        width: 90%
+    }
+    label{
+        width: 90%;
+    }
+    .titulo-barra{
+        font-size: 1rem;
+        color: white;
+        background-color: rgba(128, 128, 128, 0.171);
+        border-radius: 20%;
+        margin: 5px;
+        padding: 5px
+    }
+
 }
 
