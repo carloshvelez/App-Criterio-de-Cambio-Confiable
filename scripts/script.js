@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function (){
             textoResultados.innerHTML= `<p class="pSinEspacio"><strong>EED = ${eed}</strong></p>
             <p><strong>ICF = ${icf} (La diferencia es ${fiable})</strong></p>
             <p>El error estándar de la diferencia (EED) es <strong>${eed}</strong>. Para que el cambio sea confiable, la diferencia debe ser &plusmn1.96 veces esa cifra; es decir, <strong>&plusmn${(eed * 1.96).toFixed(2)}.</strong></p>
-            <p> La diferencia entre el postest (<strong>${post}</strong>) y el pretest (<strong>${pre}</strong>) es de <strong>${post-pre}</strong>, lo cual es <strong> ${supera} a &plusmn${(eed*1.96).toFixed(2)}</strong>, así que la diferencia es <strong>${fiable}.</strong> </p>
+            <p> La diferencia entre el postest (<strong>${post}</strong>) y el pretest (<strong>${pre}</strong>) es de <strong>${post-pre}</strong>, lo cual  <strong> ${supera} a &plusmn${(eed*1.96).toFixed(2)}</strong>, así que la diferencia es <strong>${fiable}.</strong> </p>
              <p>Lo anterior es equivalente a decir que el ICF, que fue de <strong>${icf},  ${supera} a &plusmn1.96</strong>, y por lo tanto se considera que la diferencia es <strong>${fiable}</strong>.</p>
              <p class="alert alert-info">Cuando decimos que x supera a &plusmn${(eed*1.96).toFixed(2)}, nos referimos a que x puede estar por encima de +${(eed*1.96).toFixed(2)} o por debajo de -${(eed*1.96).toFixed(2)}.</p>
             `
