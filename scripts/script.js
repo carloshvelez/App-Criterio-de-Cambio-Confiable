@@ -8,9 +8,13 @@ document.addEventListener('DOMContentLoaded', function (){
             event.preventDefault()
             let desviacion = parseFloat(formulario.elements.desviacionEstandar.value);
             let confiabilidad = parseFloat(formulario.elements.confiabilidad.value);  
+            
 
             let error = document.createElement("div");  
             
+            if (isNaN(confiabilidad) | isNaN(desviacion)){
+                return null
+            }
 
             if (confiabilidad >= 1 | confiabilidad <= 0 ){      
                 alert("La confiabilidad debe ser una valor mayor que 0 y menor que 1")                         
@@ -42,6 +46,10 @@ document.addEventListener('DOMContentLoaded', function (){
             event.preventDefault()
             let desviacion = parseFloat(formularioIcf.elements.desviacionEstandar.value);
             let confiabilidad = parseFloat(formularioIcf.elements.confiabilidad.value);
+            
+            if (isNaN(confiabilidad) | isNaN(desviacion)){
+                return null
+            }
 
             if (confiabilidad >= 1 | confiabilidad <= 0 ){      
                 alert("La confiabilidad debe ser una valor mayor que 0 y menor que 1")                         
