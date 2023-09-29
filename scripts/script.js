@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function (){
             <p><strong>Cambio fiable si la diferencia supera a: &plusmn${(eed*1.96).toFixed(2)}</strong></p>
             <p>El error estándar de la diferencia EED) es <strong>${eed}</strong>. Para que el cambio sea confiable, debe ser al menos &plusmn1.96 veces esa cifra; es decir,  <strong>&plusmn${(eed * 1.96).toFixed(2)}</strong>.</p><p>Lo anterior significa que para que la diferencia entre postest y pretest sea confiable, debe superar a <strong>&plusmn${(eed*1.96).toFixed(2)}</strong>.</p> 
             <p class="alert alert-info">Cuando decimos que x supera a &plusmn${(eed*1.96).toFixed(2)}, nos referimos a que x puede estar por encima de +${(eed*1.96).toFixed(2)} o por debajo de -${(eed*1.96).toFixed(2)}.</p>
-            <h3>Sobre el Índice de Cambio Confiable</h3> <p>El cálculo anterior te permite identificar a partir de qué punto la diferencia que observas es confiable; sin embargo, NO es el Índice de Cambio Fiable. Si quieres calcular el ICF de cada individuo tendrás que ingresar las medidas en pretest y postest en <a href="/icf.html">esta calculadora</a></p>
+            <h3>Sobre el Índice de Cambio Confiable</h3> <p>El cálculo anterior te permite identificar a partir de qué punto la diferencia que observas es confiable; sin embargo, NO es el Índice de Cambio Fiable. Si quieres calcular el ICF de cada individuo tendrás que ingresar las medidas en pretest y postest en <a href="icf.html">esta calculadora</a></p>
             `
             seccionResultados.append(textoResultados)
         })
