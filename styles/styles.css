@@ -1,10 +1,20 @@
 main{
     display: flex;
     flex-direction: column;
-    padding: 0 20%
+    padding: 0 18%;
+    background-color: rgba(0, 0, 0, 0.13);
 }
 
+.contenedor-principal{
+    background-color: white;
+    padding: 0 8%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+}
 
+.navbar{
+    height: 75px;
+}
 
 form{
     width: 70%;
@@ -84,7 +94,11 @@ footer  i{
 
 @media screen and (max-width: 862px){
     main{
-        padding: 0 10%
+        padding: 0 8%
+    }
+    .contenedor-principal{
+        
+        padding: 0 4%;
     }
     form{
         align-self: center;
@@ -103,4 +117,28 @@ footer  i{
     }
 
 }
+
+.cita{
+    margin-bottom: 10px;
+    text-indent: -2.5em;
+    padding-left: 2.5em;
+}
+
+.revista{
+    font-style: italic;
+}
+
+.instruccion-consulta{
+    text-decoration:underline;
+    background-color: rgba(255, 0, 0, 0.137);
+    font-style: italic;
+    font-weight: 600;
+    font-size: small;
+    
+}
+
+
+
+
+
 
